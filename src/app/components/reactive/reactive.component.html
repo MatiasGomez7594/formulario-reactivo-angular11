@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Complete all the fields</h1>
+    <form [formGroup]="loginForm">
+        <div class="form-group">
+            <label for="">Name:</label>
+            <input placeholder="your name" autocomplete="off" name="name" class="form-control" type="text" formControlName="name">
+        </div>
+    
+        <div class="form-group">
+            <label for="">LastName:</label>
+            <input placeholder="your lastname" autocomplete="off" name="lastName" class="form-control" type="text" formControlName="lastName">
+        </div>
+        
+        <div class="form-group">
+            <label for="">Email:</label>
+            <input placeholder="example@email.com" autocomplete="off" name="email" class="form-control" type="text" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for=""> Password:</label>
+            <input placeholder="at least 8 characters" autocomplete="off" name="password" class="form-control" type="password" formControlName="password">
+        </div>
+        <br>
+        <button class="btn btn-success" (click)="onSubmit()" [disabled]="!loginForm.valid">Submit</button>
+    </form>
+
+   
+
+
+</div>

@@ -1,0 +1,14 @@
+.container{
+    text-align: center;
+}
+
+.form-group input{
+    width:50%;
+    margin:auto;
+    
+}
+
+.form-group label{
+    margin-right: 45%;
+    margin-top: 10px;
+}
